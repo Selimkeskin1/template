@@ -13,9 +13,6 @@ class AppService : Service() {
 
     override fun onTaskRemoved(rootIntent: Intent) {
         super.onTaskRemoved(rootIntent);
-
-
-
         val model = MyModel.getInstance(applicationContext) // Mevcut modele erişir
 
         Log.d("Service", "onTaskRemoved() called")
