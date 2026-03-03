@@ -5,10 +5,15 @@ import android.util.Log
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 
-class MyModel( context: Context) : DefaultLifecycleObserver {
+class MyModel( context  : Context) : DefaultLifecycleObserver {
 
 
     private val appContext = context.applicationContext
+
+    fun test(){
+
+
+    }
 
 
     companion object {

@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class MyViewModel(  ) : ViewModel() {
+class MyViewModel() : ViewModel() {
 
 
     fun login(username: String, token: String){
