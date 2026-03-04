@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
         Log.d("MainActivity", "onCreate() call");
         appViewModel = ViewModelProvider(this).get(MyViewModel::class.java)
 
-        appModel = MyModel(applicationContext);
+        appModel = MyModel.getInstance(applicationContext);
 
         lifecycle.addObserver(appModel)
         val intent = Intent(this, AppService::class.java)

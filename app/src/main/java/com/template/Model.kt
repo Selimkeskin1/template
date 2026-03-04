@@ -5,16 +5,14 @@ import android.util.Log
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 
-class MyModel( context  : Context) : DefaultLifecycleObserver {
-
+class MyModel private constructor ( context  : Context) : DefaultLifecycleObserver {
 
     private val appContext = context.applicationContext
 
-    fun test(){
-
-
+    init {
+        // Bu log sadece nesne İLK KEZ yaratıldığında basılır
+        Log.d("MyModel", "NESNE YARATILDI! Adres: ${this.hashCode()}")
     }
-
 
     companion object {
         @Volatile
@@ -63,6 +61,9 @@ class MyModel( context  : Context) : DefaultLifecycleObserver {
 
     fun clearAll() {
         Log.d("Model", "clearAll() call");
+
+
+        Log.d("MyModel", "Socket kapatılıyor. Adres: ${this.hashCode()}")
     }
 
 
