@@ -9,6 +9,8 @@ import androidx.lifecycle.LifecycleOwner
 
 
 
+
+
 class MyModel private constructor ( context  : Context) : DefaultLifecycleObserver {
 
     private val appContext = context.applicationContext
