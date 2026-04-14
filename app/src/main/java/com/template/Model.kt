@@ -14,6 +14,8 @@ class MyModel private constructor ( context  : Context) : DefaultLifecycleObserv
     private val appContext = context.applicationContext
 
 
+
+
     init {
         // Bu log sadece nesne İLK KEZ yaratıldığında basılır
         Log.d("MyModel", "NESNE YARATILDI! Adres: ${this.hashCode()}")
