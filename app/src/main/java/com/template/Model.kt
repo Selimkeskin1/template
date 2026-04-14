@@ -5,6 +5,10 @@ import android.util.Log
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 
+
+
+
+
 class MyModel private constructor ( context  : Context) : DefaultLifecycleObserver {
 
     private val appContext = context.applicationContext
