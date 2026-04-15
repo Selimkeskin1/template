@@ -1,8 +1,6 @@
 package com.template
 
-import io.ktor.network.selector.*
-import io.ktor.network.sockets.*
-import io.ktor.utils.io.*
+
 import kotlinx.coroutines.*
 
 
@@ -15,6 +13,7 @@ class ServerSocket{
 
     fun runServer(){
         runBlocking {
+            /*
             val selectorManager = SelectorManager(Dispatchers.IO)
             val serverSocket = aSocket(selectorManager).tcp().bind("127.0.0.1", 9002)
             println("Server is listening at ${serverSocket.localAddress}")
@@ -35,6 +34,7 @@ class ServerSocket{
                     }
                 }
             }
+            */
         }
     }
 
